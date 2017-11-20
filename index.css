@@ -1,0 +1,31 @@
+section {
+    display: block;
+    border: 1px solid hotpink;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px 50px;
+    margin: 20px;
+    font-family: monospace;
+}
+
+#bridge {
+    position: fixed;
+    left: 10px;
+    top: 40px;
+    background-color: coral;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    font-family: monospace;
+}
+
+#water {
+    position: fixed;
+    right: 10px;
+    top: 40px;
+    background-color: burlywood;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    font-family: monospace;
+}
