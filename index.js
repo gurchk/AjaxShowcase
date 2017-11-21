@@ -18,7 +18,7 @@ window.addEventListener('load', function (event) {
                 ulE.appendChild(y);
             }
         }
-        req.open('GET', `http://mardby.se/AJK15G/lorem_text_random.php?numberOfWords=${numB}`);
+        req.open('GET', `https://mardby.se/AJK15G/lorem_text_random.php?numberOfWords=${numB}`);
         req.send();
     })
     // Bridge Data
@@ -32,7 +32,7 @@ window.addEventListener('load', function (event) {
 
         }
     }
-    bridgeReq.open('GET', `http://data.goteborg.se/BridgeService/v1.0/GetGABOpenedStatus/%7B806b123b-3475-450b-a9ce-3bb2588d1673%7D?format=json`);
+    bridgeReq.open('GET', `https://data.goteborg.se/BridgeService/v1.0/GetGABOpenedStatus/%7B806b123b-3475-450b-a9ce-3bb2588d1673%7D?format=json`);
     bridgeReq.send();
 
     // Camera Data
@@ -48,13 +48,13 @@ window.addEventListener('load', function (event) {
             for (let camera of fixed) {
                 cameraNum++;
                 const newElement = document.createElement('a');
-                newElement.setAttribute('href', `http://data.goteborg.se/TrafficCamera/v0.2/CameraImage/%7B806b123b-3475-450b-a9ce-3bb2588d1673%7D/${cameraNum}`)
+                newElement.setAttribute('href', `https://data.goteborg.se/TrafficCamera/v0.2/CameraImage/%7B806b123b-3475-450b-a9ce-3bb2588d1673%7D/${cameraNum}`)
                 newElement.innerHTML = `${camera.Description} ${camera.Lat}, ${camera.Long}<br>`;
                 cameraLog.appendChild(newElement);
             }
         }
     }
-    cameraReq.open('GET', "http://data.goteborg.se/TrafficCamera/v0.2/TrafficCameras/%7B806b123b-3475-450b-a9ce-3bb2588d1673%7D?format=json");
+    cameraReq.open('GET', "https://data.goteborg.se/TrafficCamera/v0.2/TrafficCameras/%7B806b123b-3475-450b-a9ce-3bb2588d1673%7D?format=json");
     cameraReq.send();
 
 
