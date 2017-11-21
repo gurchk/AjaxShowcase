@@ -57,6 +57,6 @@ window.addEventListener('load', function (event) {
     cameraReq.open('GET', "http://data.goteborg.se/TrafficCamera/v0.2/TrafficCameras/%7B806b123b-3475-450b-a9ce-3bb2588d1673%7D?format=json");
     cameraReq.send();
 
-    
+
 
 })

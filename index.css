@@ -19,13 +19,4 @@ section {
     font-family: monospace;
 }
 
-#water {
-    position: fixed;
-    right: 10px;
-    top: 40px;
-    background-color: burlywood;
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 20px;
-    font-family: monospace;
-}
+
